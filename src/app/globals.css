@@ -61,13 +61,17 @@ body {
   background: #2a2a32;
 }
 
-/* Subtle radial glow used behind sections */
+/* Subtle radial glow used behind sections.
+   Uses an ellipse sized to the box and a bottom fade mask so the glow
+   dissolves smoothly instead of being clipped into a hard edge. */
 .glow {
   background: radial-gradient(
-    circle at 50% 0%,
-    color-mix(in srgb, var(--accent) 14%, transparent),
-    transparent 60%
+    ellipse 70% 100% at 50% 0%,
+    color-mix(in srgb, var(--accent) 16%, transparent) 0%,
+    transparent 72%
   );
+  -webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 35%, transparent 100%);
 }
 
 /* Gradient text accent */
