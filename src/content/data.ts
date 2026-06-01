@@ -22,6 +22,9 @@ export interface Project {
 export const profile = {
   name: "Emmanoel Vieira",
   nickname: "Arandas",
+  handle: "@ArandasDev",
+  // Foto do crachá (V3). Usa o avatar real do GitHub; troque por uma URL própria se preferir.
+  avatar: "https://github.com/ArandasDev.png",
   role: {
     pt: "Engenheiro de Software",
     en: "Software Engineer",
@@ -43,6 +46,19 @@ export const about = {
       "Hi! I'm Emmanoel — but you can call me Arandas. I'm a software engineer driven by one purpose: using the best of technology to impact the lives of millions of people and companies.",
       "I'm genuinely passionate about the way technology evolves and its power to transform everyday life. That same curiosity pulls me toward the stars: I closely follow space engineering and SpaceX's progress, the missions to the Moon, and the future of space exploration.",
       "I believe learning is a never-ending journey. These days I'm diving into Data Engineering to build ever smarter solutions — always ready to push to the edge of the horizon.",
+    ],
+  } satisfies Localized<string[]>,
+  // Bio da V3 — foco em tecnologia (menos ênfase no espaço).
+  paragraphsV3: {
+    pt: [
+      "Olá! Me chamo Emmanoel — mas pode me chamar de Arandas. Sou engenheiro de software movido por um propósito: usar o melhor da tecnologia para impactar a vida de milhões de pessoas e empresas.",
+      "O que me move é entender como a tecnologia evolui e transformar essa evolução em produtos reais — sistemas bem arquitetados, APIs confiáveis e código que resolve problemas de verdade.",
+      "Acredito que aprender é uma jornada sem fim. Hoje me aprofundo em Engenharia de Dados para transformar dados em decisões e construir soluções cada vez mais inteligentes.",
+    ],
+    en: [
+      "Hi! I'm Emmanoel — but you can call me Arandas. I'm a software engineer driven by one purpose: using the best of technology to impact the lives of millions of people and companies.",
+      "What drives me is understanding how technology evolves and turning that into real products — well-architected systems, reliable APIs and code that actually solves problems.",
+      "I believe learning is a never-ending journey. Today I'm diving into Data Engineering to turn data into decisions and build ever smarter solutions.",
     ],
   } satisfies Localized<string[]>,
   skills: [

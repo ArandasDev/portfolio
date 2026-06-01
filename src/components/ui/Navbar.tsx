@@ -58,12 +58,14 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="/v2"
-            className="hidden rounded-full border border-border px-3 py-1 font-mono text-xs text-muted transition-colors hover:border-accent/50 hover:text-foreground sm:inline-block"
-          >
-            v2
-          </Link>
+          <div className="hidden items-center gap-1 font-mono text-xs sm:flex">
+            <Link href="/v2" className="rounded-full border border-border px-2.5 py-1 text-muted transition-colors hover:border-accent/50 hover:text-foreground">
+              v2
+            </Link>
+            <Link href="/v3" className="rounded-full border border-border px-2.5 py-1 text-muted transition-colors hover:border-accent/50 hover:text-foreground">
+              v3
+            </Link>
+          </div>
           <LanguageToggle />
           <button
             type="button"

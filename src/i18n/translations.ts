@@ -42,6 +42,14 @@ export const ui = {
       selected: "Trabalhos selecionados",
       emailCta: "Enviar um email",
     },
+    v3: {
+      focusKicker: "Áreas de foco",
+      focus: [
+        { title: "Back-end & APIs", desc: "Sistemas robustos, seguros e bem testados — da autenticação à documentação." },
+        { title: "Engenharia de Dados", desc: "Transformar dados em decisões, construindo pipelines e soluções inteligentes." },
+        { title: "Qualidade & testes", desc: "Código testável e manutenível: testes automatizados, boas práticas e documentação clara." },
+      ],
+    },
   },
   en: {
     nav: { about: "About", projects: "Projects", contact: "Contact" },
@@ -77,6 +85,14 @@ export const ui = {
       ],
       selected: "Selected work",
       emailCta: "Send an email",
+    },
+    v3: {
+      focusKicker: "Focus areas",
+      focus: [
+        { title: "Back-end & APIs", desc: "Robust, secure and well-tested systems — from auth to documentation." },
+        { title: "Data Engineering", desc: "Turning data into decisions by building pipelines and smart solutions." },
+        { title: "Quality & testing", desc: "Tested, maintainable code: automated tests, best practices and clear documentation." },
+      ],
     },
   },
 } as const;

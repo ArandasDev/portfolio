@@ -7,7 +7,7 @@ import { useLanguage } from "@/i18n/LanguageProvider";
 import { profile } from "@/content/data";
 import { LanguageToggle } from "@/components/ui/LanguageToggle";
 
-export function NavbarV2() {
+export function NavbarV3() {
   const { t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -45,7 +45,7 @@ export function NavbarV2() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="group relative font-mono text-sm text-muted transition-colors hover:text-foreground"
+                className="font-mono text-sm text-muted transition-colors hover:text-foreground"
               >
                 <span className="text-accent/70">0{i + 1}.</span> {l.label}
               </a>
@@ -58,8 +58,8 @@ export function NavbarV2() {
             <Link href="/" className="rounded-full border border-border px-2.5 py-1 text-muted transition-colors hover:border-accent/50 hover:text-foreground">
               v1
             </Link>
-            <Link href="/v3" className="rounded-full border border-border px-2.5 py-1 text-muted transition-colors hover:border-accent/50 hover:text-foreground">
-              v3
+            <Link href="/v2" className="rounded-full border border-border px-2.5 py-1 text-muted transition-colors hover:border-accent/50 hover:text-foreground">
+              v2
             </Link>
           </div>
           <LanguageToggle />
