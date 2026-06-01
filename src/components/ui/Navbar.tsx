@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { profile } from "@/content/data";
@@ -57,6 +58,12 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
+          <Link
+            href="/v2"
+            className="hidden rounded-full border border-border px-3 py-1 font-mono text-xs text-muted transition-colors hover:border-accent/50 hover:text-foreground sm:inline-block"
+          >
+            v2
+          </Link>
           <LanguageToggle />
           <button
             type="button"

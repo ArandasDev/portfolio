@@ -30,6 +30,18 @@ export const ui = {
     },
     footer: { built: "Feito com Next.js, Three.js e muito café", rights: "Todos os direitos reservados." },
     a11y: { toggleLang: "Mudar idioma", openMenu: "Abrir menu", closeMenu: "Fechar menu" },
+    v2: {
+      badge: "Disponível para novos projetos",
+      eyebrow: "Portfólio · 2026",
+      focusKicker: "Áreas de foco",
+      focus: [
+        { title: "Back-end & APIs", desc: "Sistemas robustos, seguros e bem testados — da autenticação à documentação." },
+        { title: "Engenharia de Dados", desc: "Transformar dados em decisões, construindo pipelines e soluções inteligentes." },
+        { title: "Exploração & espaço", desc: "Curiosidade sem limites, inspirada pelos avanços da engenharia espacial." },
+      ],
+      selected: "Trabalhos selecionados",
+      emailCta: "Enviar um email",
+    },
   },
   en: {
     nav: { about: "About", projects: "Projects", contact: "Contact" },
@@ -54,6 +66,18 @@ export const ui = {
     },
     footer: { built: "Built with Next.js, Three.js and a lot of coffee", rights: "All rights reserved." },
     a11y: { toggleLang: "Switch language", openMenu: "Open menu", closeMenu: "Close menu" },
+    v2: {
+      badge: "Available for new projects",
+      eyebrow: "Portfolio · 2026",
+      focusKicker: "Focus areas",
+      focus: [
+        { title: "Back-end & APIs", desc: "Robust, secure and well-tested systems — from auth to documentation." },
+        { title: "Data Engineering", desc: "Turning data into decisions by building pipelines and smart solutions." },
+        { title: "Exploration & space", desc: "Boundless curiosity, inspired by the advances of space engineering." },
+      ],
+      selected: "Selected work",
+      emailCta: "Send an email",
+    },
   },
 } as const;
 

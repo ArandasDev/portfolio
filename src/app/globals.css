@@ -90,3 +90,30 @@ body {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   Variante V2 (mais criativa) — paleta "aurora" teal + violeta.
+   Aplicada via .theme-v2 no wrapper da rota /v2.
+--------------------------------------------------------------------------- */
+.theme-v2 {
+  --accent: #5eead4;
+  --accent-soft: #99f6e4;
+  --accent-2: #c084fc;
+}
+
+.text-aurora {
+  background: linear-gradient(115deg, #99f6e4 0%, #7dd3fc 45%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Grade sutil de fundo, esmaecida nas bordas. */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--border) 70%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--border) 70%, transparent) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000, transparent 75%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000, transparent 75%);
+}
