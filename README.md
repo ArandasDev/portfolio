@@ -45,6 +45,16 @@ No `src/content/data.ts` há dois `TODO`:
 1. **LinkedIn** — substituir `social.linkedin` pela URL real.
 2. **push-or-fall** — repositório retornou 404; ajustar `description` e `href` quando confirmado.
 
+## Rotas / versões
+
+A versão mais recente fica sempre na raiz; as anteriores viram histórico
+(ver `CLAUDE.md`):
+
+- `/` — versão atual (hoje V3: crachá interativo, foco em tecnologia)
+- `/v1` — histórico (primeira versão)
+- `/v2` — histórico (layout editorial)
+- `/v3` — redireciona para `/`
+
 ## Estrutura
 
 ```

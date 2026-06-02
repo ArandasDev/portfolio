@@ -5,6 +5,7 @@ import { AboutV2 } from "@/components/v2/AboutV2";
 import { ProjectsV2 } from "@/components/v2/ProjectsV2";
 import { ContactV2 } from "@/components/v2/ContactV2";
 import { Footer } from "@/components/Footer";
+import { HistoryBanner } from "@/components/HistoryBanner";
 import { profile } from "@/content/data";
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function V2Page() {
         <ContactV2 />
       </main>
       <Footer />
+      <HistoryBanner version="v2" />
     </div>
   );
 }

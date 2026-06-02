@@ -55,7 +55,7 @@ export function NavbarV3() {
 
         <div className="flex items-center gap-3">
           <div className="hidden items-center gap-1 font-mono text-xs sm:flex">
-            <Link href="/" className="rounded-full border border-border px-2.5 py-1 text-muted transition-colors hover:border-accent/50 hover:text-foreground">
+            <Link href="/v1" className="rounded-full border border-border px-2.5 py-1 text-muted transition-colors hover:border-accent/50 hover:text-foreground">
               v1
             </Link>
             <Link href="/v2" className="rounded-full border border-border px-2.5 py-1 text-muted transition-colors hover:border-accent/50 hover:text-foreground">

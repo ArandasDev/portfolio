@@ -49,7 +49,9 @@ export const ui = {
         { title: "Engenharia de Dados", desc: "Transformar dados em decisões, construindo pipelines e soluções inteligentes." },
         { title: "Qualidade & testes", desc: "Código testável e manutenível: testes automatizados, boas práticas e documentação clara." },
       ],
+      dragHint: "Arraste para balançar · clique para revelar a empresa",
     },
+    history: { label: "Versão histórica", current: "Ver versão atual" },
   },
   en: {
     nav: { about: "About", projects: "Projects", contact: "Contact" },
@@ -93,7 +95,9 @@ export const ui = {
         { title: "Data Engineering", desc: "Turning data into decisions by building pipelines and smart solutions." },
         { title: "Quality & testing", desc: "Tested, maintainable code: automated tests, best practices and clear documentation." },
       ],
+      dragHint: "Drag to swing · click to reveal the company",
     },
+    history: { label: "Archived version", current: "Go to current version" },
   },
 } as const;
 
